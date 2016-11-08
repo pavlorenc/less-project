@@ -1,8 +1,49 @@
 @primaryColor: #2B5183;
+@secondaryColor: #116256;
+@linkColor: #99A602;
+@alertColor: #E0927D;
+
+.body {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/*--NOTIFICATION--*/
+.alert {
+  background-color: @alertColor;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*--TYPOGRAPHY--*/
+ h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+ }
+
+
+/*--HEADER--*/
 
 header {
-  font-family: Helvetica, Arial, sans-serif;
   background-color: lighten(@primaryColor, 50%);
   border: 1px solid darken(@primaryColor, 10%);
   color: @primaryColor;
+}
+
+/*--MY TEST BLOCK-*/
+.block {
+  background-color: lighten(@primaryColor, 50%);
+  border-top-right-radius: 2rem;
+  border: 1px solid darken(@primaryColor, 10%);
+
+  &__title {
+    color: @secondaryColor;
+    font-size: 1.2rem;
+    padding-left: 10px;
+  }
+
+  &__content {
+    background-color: #D5D5D5;
+    padding: 10px;
+  }
 }
